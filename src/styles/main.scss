@@ -7,6 +7,7 @@
 @use "click";
 @use 'history';
 @use 'elenco';
+@use 'articleElenco';
 
 
 
@@ -32,6 +33,8 @@ body{
 }
 
 .main {
+
+    
     background-color: $corDoTextoPric;
     display: none;
     transition: opacity  0.10s ease; 

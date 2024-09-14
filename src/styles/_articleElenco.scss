@@ -1,0 +1,129 @@
+@use 'variaveis' as *;
+
+.elenco{
+    
+    &__div{
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 1px rgba(255, 255, 255, 0.378);
+    transition: 0.5s ease;
+
+    h3{
+        padding-bottom: 18px;
+        font-size: 34px;
+
+        color: $corDoTextoPric;
+        text-shadow: 1px 1px 3px $corPrinc;
+    
+    }
+
+    p{
+        padding: 5px 34px;
+        color: azure;
+        font-size: 18px;
+
+        &:last-child{
+            padding-top: 20px;
+            font-weight: bold;
+        }
+        
+    }
+
+    
+
+    &__art{
+        transition: 0.5s ease;
+        display: none;
+
+        
+
+        &--is-margot{ /* margot */
+
+            
+
+            transition: 0.5s ease;
+            display: none;
+
+            background-color: #fc419b7e;
+
+            padding: 120px 5px;
+            border-radius: 5px;
+            
+            
+            border: 10px double  aliceblue;
+
+            
+        }
+
+        &--is-ryan{ /* ryan */
+            transition: 0.5s ease;
+            display: none;
+
+            background-color: rgba(0, 170, 255, 0.477);
+
+            padding: 120px 5px;
+            border-radius: 5px;
+            border: 10px double  aliceblue;
+
+            
+
+        }
+
+        &--is-hari{ /* hari */
+            transition: 0.5s ease;
+            display: none;
+
+            background-color: rgba(255, 225, 0, 0.676);
+
+            padding: 120px 5px;
+            border-radius: 5px;
+            border: 10px double  aliceblue;
+
+            
+
+        }
+
+        &--is-america{ /* america */
+            transition: 0.5s ease;
+            display: none;
+
+            background-color: #bc88c182;
+
+            padding: 120px 5px;
+            border-radius: 5px;
+            border: 10px double  aliceblue;
+
+            
+
+        }
+
+        
+        &--is-mother{ /* mother */
+            transition: 0.5s ease;
+            display: none;
+
+            background-color: #49292e9c;
+
+            padding: 120px 5px;
+            border-radius: 5px;
+            border: 10px double  aliceblue;
+
+            
+
+        }
+        &--is-allan{ /* allan */
+            transition: 0.5s ease;
+            display: none;
+
+            background-color: rgba(255, 128, 0, 0.613);
+
+            padding: 120px 5px;
+            border-radius: 5px;
+            border: 10px double  aliceblue;
+
+            
+
+        }
+    }
+}
+}
+

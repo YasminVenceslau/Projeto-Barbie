@@ -22,8 +22,8 @@
 
     </section><!-- click -->
 
-    <main class="main  "> <!-- main -->
-        <div class="invisivel"></div>
+    <main class="main  main--is-visible"> <!-- main -->
+        
 
         <header class="header"><!-- header -->
         <div class="header__container">
@@ -32,12 +32,12 @@
             </h1>
         </div>
         </header><!-- header -->
-           
+            
         <nav class="nav"><!-- nav -->
         <ul class="nav__tabela">
             
             <li class="nav__tabela__item text">História</li>
-           
+        
             <li class="nav__tabela__item text">Elenco</li>
             <li class="nav__tabela__item text">Curiosidades</li>
             <li class="nav__tabela__item text">Filmes</li>
@@ -54,7 +54,7 @@
                         <img src="src/imagens/titulos/HISTORIA.png" alt="HISTORIA">
                     </h2>
                     <p class="text">
-                        Barbara Millicent Roberts, popularmente conhecida como a boneca Barbie, é um brinquedo infantil, cuja criação data de 9 de março de 1959 e é produzido pela Mattel. Ela foi criada pela empresária Ruth Handler e foi baseada na boneca alemã Bild Lilli.
+                        Barbara Millicent Roberts, popularmente conhecida como a boneca Barbie, é um brinquedo infantil, cuja criação data de 9 de março de 1959 e é produzido pela Mattel. Ela foi criada pela empresária Ruth Handler e foi baseada na boneca alemã Bild Lilli. 
                     
                     </p>
                     <p class="text">
@@ -67,7 +67,7 @@
                     <p class="text">Diante de seu sucesso a boneca já recebeu várias coleções, roupas,cenários amigos entre cada década, bem como seus próprios filmes, quadrinhos, jogos eletrônicos e desenhos animados.
                         
                     </p>
-                    <a target="_blank" href="https://aminoapps.com/c/barbiegirl/info/">Saiba mais. </a>
+                    
                 </section><!-- history__container__section -->
 
             </div>
@@ -86,38 +86,89 @@
 
                     <ul class="elenco__section__itens"><!-- elenco__section__itens -->
 
-                        <li class="elenco__section__itens__item">
+                        <li data-tab-question="margot" class="elenco__section__itens__item">
                             <img src="src/imagens/barbies/barbir-post.jpg" alt="barbie margot robbie">
                         </li>
-                        <li class="elenco__section__itens__item">
+                        <li data-tab-question="ryan" class="elenco__section__itens__item">
                             <img src="src/imagens/barbies/ken1-post.jpg" alt="just ken">
                         </li>
-                        <li class="elenco__section__itens__item">
+                        <li data-tab-question="hari" class="elenco__section__itens__item">
                             <img src="src/imagens/barbies/doctorBarbie-post.jpg" alt="doctor Barbie">
                         </li>
-                        <li class="elenco__section__itens__item">
+                        <li data-tab-question="america" class="elenco__section__itens__item">
                             <img src="src/imagens/barbies/human1-post.jpg" alt=" America Ferrera">
                         </li>
                 
-                        <li class="elenco__section__itens__item">
+                        <li data-tab-question="mother" class="elenco__section__itens__item">
                             <img src="src/imagens/barbies/mother.jpg" alt="mother">
                         </li>
-                        <li class="elenco__section__itens__item">
-                            <img src="src/imagens/barbies/midge-post.jpg" alt="barbie grávida">
+                        <li data-tab-question="allan" class="elenco__section__itens__item">
+                            <img src="src/imagens/barbies/allan-post.jpg" alt="allan">
                         </li>
+                        
                     </ul><!-- elenco__section__itens -->
                 
                 </section><!-- elenco__section -->
                 <div class="elenco__div">
-                    <article class="elenco__div__art elenco__div__art--is-margot">
-                        <h3>Margot Barbie</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum adipisci, quibusdam cum atque esse sunt quia deserunt a nostrum ipsa quasi dolor eum expedita inventore. Sapiente adipisci officia quo consequatur.</p>
+                    <article data-tab-resposta="margot" class="elenco__div__art elenco__div__art--is-margot"> <!-- Margot -->
+                        <h3>Margot como Barbie</h3>
+                        <p>Margot Robbie é a protagonista de Barbie e, por isso, vive a primeira versão da boneca da Mattel, a Barbie Estereotipada.</p>
+                        <p>
+                            Primeiro modelo da Barbie.
+                        </p>
+                    </article>
+
+                    <article data-tab-resposta="ryan" class="elenco__div_art elenco__div__art--is-ryan"><!-- ryan -->
+                        <h3>Ryan como Ken</h3>
+                        <p>Em Barbie, o ator interpreta o principal Ken que, por esse mesmo motivo, não possui função alguma na Barbielândia.</p>
+                        <p>
+                           “Ken ele é?”
+                        </p>
+                    </article>
+                    <article data-tab-resposta="hari" class="elenco__div_art elenco__div__art--is-hari"><!-- hari -->
+                        <h3>Hari Nef como a Barbie </h3>
+                        <p>
+                            Ela é uma das personagens da Barbilândia com mais personalidade e se destaca por ser uma mulher trans entrando no papel da boneca.
+                        </p>
+
+                        <p>Hari Nef encarna no papel de Doutora em Barbie. </p>
+                    </article>
+                    <article data-tab-resposta="america" class="elenco__div_art elenco__div__art--is-america"><!-- america -->
+                        <h3>America Ferrera é Gloria </h3>
+                        <p>
+                            Gloria, interpretada por America Ferrera, é um dos elementos mais importantes na narrativa de Barbie. Gloria não é apenas uma funcionária da Mattel.
+                        </p>
+
+                        <p>A primeira a estender a mão para a Barbie. </p>
+                    </article>
+
+                    <article data-tab-resposta="mother" class="elenco__div_art elenco__div__art--is-mother"><!-- mother -->
+                        <h3>Will Ferrell é a Mãe </h3>
+                        <p>
+                            Sempre em busca do lucro e a ordem na sua empresa, seu personagem está disposto a fazer de tudo para permanecer no controle.
+                        </p>
+
+                        <p>O patriarcado sob a forma do CEO da Mattel.</p>
+                    </article>
+                    
+                    <article data-tab-resposta="allan" class="elenco__div_art elenco__div__art--is-allan"><!-- allan -->
+                        <h3>Michael Cera é Allan</h3>
+                        <p>
+                            Inicialmente, seu personagem não parece ter função alguma além de ser uma adição cômica, mas aos poucos vemos que Cera veio conquistar o público com seu jeitinho estranho.
+                        </p>
+
+                        <p>Allan, o melhor amigo do Ken.</p>
                     </article>
                 </div>
             </div>
 
         </section> <!-- elenco -->
 
+
+        <section style="padding:50px ;">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, deserunt amet laboriosam culpa enim placeat animi a quisquam officia laudantium. Ipsum ullam, recusandae asperiores eos sunt iure aspernatur incidunt in.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe beatae sed error neque totam? Repudiandae voluptatibus quidem vel, vero modi esse iusto dolorem. Porro in, ipsum accusantium ipsa dicta nostrum.
+        </section>
 
         <footer class="footer"><!-- footer -->
             <img src="dist/images/corvette-desktop.png" alt="">

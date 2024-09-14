@@ -25,13 +25,10 @@ width: 100%;
             transition: 0.2s;
             cursor: pointer; 
             
-           
-          
-
             &:hover{
                 margin-top: -30px;
                 box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.523);
-                width: 29%;
+                transform: scale(1.1);
                 overflow: hidden;
                 
             }
