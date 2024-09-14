@@ -1,0 +1,24 @@
+@use '_variaveis' as *;
+
+.header{
+
+    background-image: url(/src/imagens/back.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+
+    &__container{
+        
+        height: 500px;
+        
+      
+            h1{
+                
+                padding:100px 50px;
+
+                
+            }
+        
+        
+        
+    }
+}

@@ -1,0 +1,61 @@
+
+
+@use 'header';
+@use 'variaveis' as *;
+@use 'nav';
+@use 'footer';
+@use "click";
+@use 'history';
+@use 'elenco';
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Noto Sans", sans-serif;
+    
+    
+}
+
+body{
+    background-color: #57AAD6;
+    background-image: url(/src/imagens/back.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.main {
+    background-color: $corDoTextoPric;
+    display: none;
+    transition: opacity  0.10s ease; 
+
+    &--is-visible{
+        display: block;
+        opacity: 1;
+    }
+}
+
+/* @mixin text ($fontsize:100px){
+
+    font-size: $fontsize;
+    color: $corPrinc;
+
+} */
+
+
+
+.title{
+
+    /* @include text; */
+
+    img{
+        width: 30%; 
+    }   
+}

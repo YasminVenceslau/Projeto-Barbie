@@ -1,0 +1,10 @@
+
+@use '_variaveis' as *;
+.footer{
+    display: none;
+    background-color: $corSecund;
+    img{
+        width: 100%;
+        
+    }
+}

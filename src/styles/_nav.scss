@@ -1,0 +1,32 @@
+@use 'variaveis' as *;
+
+.nav{
+
+    background-color: $corPrinc;
+    padding: 8px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    
+    &__tabela{
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+
+        &__item{
+            cursor: pointer;
+
+            color: $corDoTextoPric;
+            font-size: 24px;
+            text-shadow: 1px 2px 1px $corSecund;
+
+            transition: 0.3s ease;
+
+            &:hover{
+                color: $corSecund;
+                text-shadow: 1px 2px 1px $corDoTextoPric;
+            }
+
+
+        }
+        
+    }
+}

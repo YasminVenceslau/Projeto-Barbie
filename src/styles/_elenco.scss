@@ -1,0 +1,64 @@
+@use 'variaveis' as * ;
+
+.elenco{
+ 
+    background-color: $corSecund;
+    text-align: center;
+    padding: 50px;
+
+    &__conteudo{
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 0.1fr 1fr;
+        align-items: center;
+    }
+
+    &__section{
+
+        width: 700px;
+        margin: 0 auto;
+        
+        
+        &__itens{
+            
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+            justify-content: space-between;
+
+            
+            
+            &__item{
+                padding: 5px 5px;
+                img{
+                    width: 90%;
+                    border-radius: 50%;
+                    transition: 0.3s ease;
+
+                    &:hover{
+                        box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.523);
+                        width: 102%;
+                    }
+                }
+            }
+        }
+
+        
+    } 
+
+    &__div{
+
+        width: 100%;
+
+        &__art{
+            display: none;
+
+            &--is-margot{
+                display: block;
+                background-color: $corPrinc;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+    

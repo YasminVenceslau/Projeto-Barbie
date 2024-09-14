@@ -1,0 +1,51 @@
+@use 'variaveis' as *;  
+
+    .history{  
+
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+
+
+        &__container{
+
+            display: grid;
+            justify-content: space-around;
+            grid-template-columns: .6fr 1fr;
+            align-items: center;
+            padding: 16px;
+
+            &__dona{
+                
+                width: 80%;
+                border-radius: 200px 0px 200px 200px;
+                box-shadow: 11px 6px 42px -30px  $corPrinc;
+                
+                
+            }
+
+            &__section{
+
+                flex-direction: column;
+                justify-content: center;
+
+                
+
+                p{
+                    padding: 5px;
+                    
+                }
+
+                a{
+                    color:$corPrinc ;
+                    font-size: 16px;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $corSecund;
+                    }
+                }
+            }
+
+        }
+
+    }
