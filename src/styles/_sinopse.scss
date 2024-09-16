@@ -10,11 +10,12 @@
     }
 
     &__container{
-
+       
         img{
             border-radius: 5px;
             @media (max-width:794px) {
-                width: 100%;
+                width: 90%;
+                height: 50%;
    
             }
 
@@ -25,13 +26,17 @@
         grid-template-columns: 0.1fr 0.75fr;
         justify-content: center;
 
-        @media (max-width:794px) {
-            display: inline;
-
-        }
+        
 
         @media (max-width:1025px) {
             display: flex;
+
+        }
+        @media (max-width:794px) {
+            display: inline;
+            justify-content: center;
+            margin: 0 20px;
+            
 
         }
         
@@ -50,8 +55,8 @@
             @media (max-width:794px) {
                 
                 padding: 10px;
-                width: 100%;
-                margin: 0;
+                width: 90%;
+                margin: 0 20px;
                 
    
             }
@@ -67,7 +72,7 @@
                 @media (max-width:1025px) {
                 
                     font-size: 16px;
-                    
+                   
        
                 }
                

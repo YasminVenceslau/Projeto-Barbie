@@ -13,6 +13,8 @@
 
         color: $corDoTextoPric;
         text-shadow: 1px 1px 3px $corPrinc;
+
+        
     
     }
 
@@ -28,13 +30,27 @@
         
     }
 
-    
+    @media (max-width:794px) {
+                           
+        h3{
+           font-size: 24px;
+        }
+        p{
+            font-size: 16px;
+            
+            
+        }
+    }
 
     &__art{
         transition: 2s ease;
         display: none;
 
-        
+        @media (max-width:794px) {
+                           
+           margin: 0;
+           padding: 0;
+        }
 
         &--is-margot{ /* margot */
 
