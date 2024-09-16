@@ -1,0 +1,79 @@
+@use 'variaveis' as *;
+
+.sinopse{
+   
+    padding: 50px;
+
+    @media (max-width:794px) {
+        padding: 10px 20px;
+
+    }
+
+    &__container{
+
+        img{
+            border-radius: 5px;
+            @media (max-width:794px) {
+                width: 100%;
+   
+            }
+
+            
+        }
+
+        display: grid;
+        grid-template-columns: 0.1fr 0.75fr;
+        justify-content: center;
+
+        @media (max-width:794px) {
+            display: inline;
+
+        }
+
+        @media (max-width:1025px) {
+            display: flex;
+
+        }
+        
+
+        &__article{
+            padding: 15% 20px ;
+            margin: 0 30px;
+
+
+
+            border: 1px solid palevioletred;
+            background-color: rgba(142, 35, 71, 0.322);
+            
+            border-radius: 5px;
+
+            @media (max-width:794px) {
+                
+                padding: 10px;
+                width: 100%;
+                margin: 0;
+                
+   
+            }
+
+           
+
+            
+            p{
+                padding-bottom: 10px;
+                text-align: left;
+                color: aliceblue;
+
+                @media (max-width:1025px) {
+                
+                    font-size: 16px;
+                    
+       
+                }
+               
+            }
+
+            
+        }
+    }
+}

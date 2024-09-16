@@ -1,10 +1,26 @@
 
 @use '_variaveis' as *;
+
 .footer{
-    display: none;
-    background-color: $corSecund;
-    img{
-        width: 100%;
-        
+    text-align: center;
+    display: block;
+    background-color: $corPrinc;
+    color: aliceblue;
+    padding: 1px;
+
+    @media (max-width:794px) {
+        font-size: 10px;
+     }
+     
+    
+
+    a{
+        transition: 1s ease;
+
+        &:hover{
+            color: lightpink;
+            font-weight: bold;
+            
+        }
     }
 }

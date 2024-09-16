@@ -1,0 +1,179 @@
+@use 'variaveis' as *; 
+
+.curiosidade{
+
+    padding: 50px 0 20px;
+    
+
+    h2{
+        text-align:center;
+        padding-top: 50px;
+
+    }
+
+    color: aliceblue;
+    
+    h3{
+        text-align: center;
+        padding: 5px;
+    }
+
+    p{
+        text-align:  start;
+    }
+
+    @mixin article ($cordoArtigo){
+        background-color: $cordoArtigo;
+        border-radius: 5px;
+        padding: 5px;
+
+        h3{
+            padding-bottom: 5px;
+        }
+        p{
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.808);
+        }
+    }
+    
+
+
+    .container{
+        display: flex;
+       
+        @media (max-width:794px) {
+            display: inline;
+
+        }
+
+        @media (max-width:1025px) {
+            display: grid;
+            }
+        
+        &__principal{
+            background-image: url(/src/imagens/barbie.jpg);
+            background-size: cover;
+            height: 600px;
+            background-color: #fc419b;
+            padding: 10px;
+            @media (max-width:1025px) {
+                    height: 600px;
+                    
+                }
+            .artigo{
+                @include article( #fc419b99);
+
+                @media (max-width:1025px) {
+                    padding-bottom: 50px;
+                    
+                    h3{
+                       font-size: 34px;
+                    }
+                    p{
+                        font-size: 30px;
+                        
+                        text-shadow: none;
+                    }
+                }
+            }
+
+            
+        }
+       
+        &__secunda{
+            
+
+            &__cima{
+                background-image: url(/src/imagens/barbie-ken.jpg);
+                background-size: cover;
+                background-color: #E1A5C3;
+                
+                padding: 10px;
+                height: 300px;
+                @media (max-width:1025px) {
+                    height: 400px;
+                    
+                }
+                .artigo{
+                    @include article( #e1a5c37b);
+                    @media (max-width:1025px) {
+                        padding-bottom: 50px;
+                        
+                        h3{
+                           font-size: 34px;
+                        }
+                        p{
+                            font-size: 30px;
+                            
+                            text-shadow: none;
+                        }
+                    }
+                }
+            }
+
+            &__baixo{
+                display: flex;
+                height: 300px;
+
+                @media (max-width:794px) {
+                    display: inline;
+                    
+                }
+                @media (max-width:1025px) {
+                    height: 400px;
+                    
+                }
+                
+                &__esquerda{
+                    
+                    background-image: url(/src/imagens/elas.jpg);
+                    background-size: cover;
+                    background-color: #F2CA50;
+                    padding: 10px;
+
+                    .artigo{
+                        @include article( #f2ca5070);
+                        @media (max-width:1025px) {
+                           
+                            h3{
+                               font-size: 30px;
+                            }
+                            p{
+                                font-size: 24px;
+                                
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                }
+
+                &__direita{
+                    background-image: url(/src/imagens/ken.jpeg);
+                    background-size: cover;
+                    background-color: #45BFB3;
+                    padding: 10px;
+
+                    .artigo{
+                    @include article( #45bfb367);
+                    @media (max-width:1025px) {
+                           
+                        h3{
+                           font-size: 30px;
+                        }
+                        p{
+                            font-size: 24px;
+                            
+                            text-shadow: none;
+                        }
+                    }
+                }
+                }
+            }
+
+        }
+    }
+
+    
+
+
+    
+}

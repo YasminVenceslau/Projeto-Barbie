@@ -5,7 +5,7 @@
     &__div{
     border-radius: 5px;
     box-shadow: 1px 1px 6px 1px rgba(255, 255, 255, 0.378);
-    transition: 0.5s ease;
+    transition: 2s ease;
 
     h3{
         padding-bottom: 18px;
@@ -31,7 +31,7 @@
     
 
     &__art{
-        transition: 0.5s ease;
+        transition: 2s ease;
         display: none;
 
         
@@ -40,7 +40,7 @@
 
             
 
-            transition: 0.5s ease;
+            transition: 2s ease;
             display: none;
 
             background-color: #fc419b7e;
@@ -55,7 +55,7 @@
         }
 
         &--is-ryan{ /* ryan */
-            transition: 0.5s ease;
+            transition: 2s ease;
             display: none;
 
             background-color: rgba(0, 170, 255, 0.477);
@@ -69,7 +69,7 @@
         }
 
         &--is-hari{ /* hari */
-            transition: 0.5s ease;
+            transition: 2s ease;
             display: none;
 
             background-color: rgba(255, 225, 0, 0.676);
@@ -83,7 +83,7 @@
         }
 
         &--is-america{ /* america */
-            transition: 0.5s ease;
+            transition: 2s ease;
             display: none;
 
             background-color: #bc88c182;
@@ -98,7 +98,7 @@
 
         
         &--is-mother{ /* mother */
-            transition: 0.5s ease;
+            transition: 2s ease;
             display: none;
 
             background-color: #49292e9c;
@@ -111,7 +111,7 @@
 
         }
         &--is-allan{ /* allan */
-            transition: 0.5s ease;
+            transition: 2s ease;
             display: none;
 
             background-color: rgba(255, 128, 0, 0.613);

@@ -1,13 +1,13 @@
-
-
 @use 'header';
 @use 'variaveis' as *;
-@use 'nav';
+@use 'sinopse';
 @use 'footer';
 @use "click";
 @use 'history';
 @use 'elenco';
 @use 'articleElenco';
+@use 'curiosidades';
+
 
 
 
@@ -57,8 +57,44 @@ body{
 .title{
 
     /* @include text; */
-
+    text-align: center;
     img{
         width: 30%; 
+
+        @media (max-width:764px) {
+            width: 90%;
+
+        }
     }   
+}
+
+
+.nav{
+
+    background-color: $corPrinc;
+    padding: 8px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  
+}
+
+.icone{
+    
+    display: flex;
+    justify-content: end;
+    position: sticky;
+    bottom: 0;
+    @media (max-width:764px) {
+       width:300px;
+       position: sticky;
+       bottom: 0;
+       z-index: 1;
+    }
+    
+        
+        img{
+            width: 50px;
+            cursor: pointer;
+
+        }
+    
 }
